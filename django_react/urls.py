@@ -7,7 +7,7 @@ router = routers.DefaultRouter()
 router.register('movies', views.MoviesViewSet, 'movie')
 
 urlpatterns = [
-    path('', views.home, "home"),
+    path('', views.home, name="home"),
 ]
 
 urlpatterns += router.urls

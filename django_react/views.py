@@ -8,8 +8,8 @@ from .serializers import MovieSerializer
 
 
 # Create your views here.
-def home():
-    return Response("Home")
+def home(request):
+    return HttpResponse("Home")
 
 
 #
